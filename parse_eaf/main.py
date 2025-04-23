@@ -2,8 +2,6 @@ import os
 import argparse
 import numpy as np
 import xml.etree.ElementTree as ET
-import torch
-import torchaudio
 import json
 import soundfile as sf
 
