@@ -7,17 +7,10 @@ import torchaudio
 import json
 import soundfile as sf
 
-parser = argparse.ArgumentParser(description="Train Wav2Vec2 XLSR with EAF annotations")
-parser.add_argument("--data_dir", type=str, default="~/N/project/CoRSAL", help="Path to input data directory")
-parser.add_argument("--model_dir", type=str, default="~/tonal-transfer/models", help="Path to training scripts directory")
-parser.add_argument("--output_dir", type=str, default="~/tonal-transfer/system_output", help="Path to output transcriptions")
-parser.add_argument("--skip_login", action="store_true", help="Opt-out of Hugging Face login")
-args = parser.parse_args()
 
 def parse_eaf(eaf_file):
     """
     Parses an ELAN (.eaf) file and extracts aligned transcriptions.
-    
     Returns:
         List of dicts with 'start', 'end', and 'text' timestamps.
     """
@@ -64,7 +57,6 @@ def extract_audio_segments(wav_file, annotations):
 def process_eaf_data(eaf_path, wav_path):
     """
     Parses EAF file and extracts corresponding speech from WAV file.
-    
     Returns:
         List of processed training data.
     """
@@ -88,17 +80,21 @@ def create_vocab(data_dir):
     vocab_path = os.path.join(args.model_dir, "vocab.json")
     with open(vocab_path, "w") as vocab_file:
         json.dump(vocab, vocab_file)
-    
     return vocab_path
+    
+def main():
+    args = parse_args()
+    os.makedirs(args.output_dir, exist_ok=True)
 
-def __init__ = '__name__'
-    eaf_files = [f for f in os.listdir(args.data_dir) if f.endswith(".eaf")]
+    dataset = build_dataset(args.data_dir)
 
-    for eaf_file in eaf_files:
-        wav_file = eaf_file.replace(".eaf", ".wav")
-        wav_path = os.path.join(args.data_dir, "audio", wav_file)
-        eaf_path = os.path.join(args.data_dir, eaf_file)
+    with open(os.path.join(args.output_dir, "train_segments.jsonl"), "w", encoding="utf-8") as f:
+        for ex in dataset:
+            f.write(json.dumps({"text": ex["text"]}, ensure_ascii=False) + "\n")
 
-        if os.path.exists(wav_path):
-            train_data.extend(process_eaf_data(eaf_path, wav_path))
+    vocab = create_vocab(dataset)
+    with open(os.path.join(args.output_dir, "vocab.json"), "w", encoding="utf-8") as f:
+        json.dump(vocab, f, ensure_ascii=False, indent=2)
 
+if __name__ == "__main__":
+    main()
