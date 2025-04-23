@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 # also requires set-up instructions delineated in README
 
 [project]
-name = "parse_EAF"
+name = "parse_eaf"
 version = "0.0.1"
 description = "A library to help parse EAF and Timegrid files"
 readme = "README.md"
@@ -29,7 +29,7 @@ dev = ["bumpver", "pip-tools"]
 
 
 [project.urls]
-Homepage = https://github.com/mealieff/tonal-transfer/blob/main/models/train.py
+Homepage = "https://github.com/mealieff/parse_eaf"
 
 
 
