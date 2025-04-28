@@ -63,15 +63,10 @@ def process_eaf_data(eaf_path, wav_path):
 
 def create_vocab(data_dir):
     vocab = {}
-    eaf_files = [f for f in os.listdir(data_dir) if f.endswith(".eaf")]
-    
-    for eaf_file in eaf_files:
-        annotations = parse_eaf(os.path.join(data_dir, eaf_file))
-        for ann in annotations:
-            for char in ann["text"]:
-                if char not in vocab:
-                    vocab[char] = len(vocab)
-    
+    for ex in dataset:
+        for char in ex["text"]:
+            if char not in vocab:
+                vocab[char] = len(vocab)
     vocab["<unk>"] = len(vocab)
     vocab["<pad>"] = len(vocab)
     
@@ -90,7 +85,7 @@ def main():
         for ex in dataset:
             f.write(json.dumps({"text": ex["text"]}, ensure_ascii=False) + "\n")
 
-    vocab = create_vocab(dataset)
+    vocab = create_vocab(dataset, args.output_dir)
     with open(os.path.join(args.output_dir, "vocab.json"), "w", encoding="utf-8") as f:
         json.dump(vocab, f, ensure_ascii=False, indent=2)
 
