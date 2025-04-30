@@ -23,7 +23,8 @@ python3 main.py --data_dir ./aligned_lamkang --output_dir ./processed_data
 python -m parse_eaf
 
 # File Stucture 
-
+```
 parse_eaf/
 ├── __init__.py       # Package marker
 ├── main.py           # Main parsing functions
+```
