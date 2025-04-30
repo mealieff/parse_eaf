@@ -74,7 +74,12 @@ def create_vocab(data_dir):
     with open(vocab_path, "w") as vocab_file:
         json.dump(vocab, vocab_file)
     return vocab_path
-    
+
+def parse_args():
+    parser.add_argument("--data_dir", type=str, default="~/dataset", help="Path to input data directory")
+    parser.add_argument("--output_dir", type=str, default="~/output", help="Path to output transcriptions")
+
+
 def main():
     args = parse_args()
     os.makedirs(args.output_dir, exist_ok=True)
