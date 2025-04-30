@@ -19,7 +19,7 @@ Processing output: 'train_segments.jsonl' and 'vocab.json'
 
 - example how to use it as a command line tool, and how to use the modules
 ```
-python3 main.py --data_dir ./aligned_lamkang --output_dir ./processed_data
+python3 main.py --data_dir ./dataset --output_dir ./output
 python -m parse_eaf
 ```
 # File Stucture 
