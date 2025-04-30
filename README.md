@@ -3,7 +3,6 @@ This Python module extracts pairs of audio file and transcription from ELAN .eaf
 
 
 ### Modular functions in 'main.py'
-outputs : train_segments.jsonl and vocab.json
 
 `parse_eaf(eaf_file)`: Parses an ELAN `.eaf` XML file and extracts time-aligned annotations. It converts timestamp references into actual time in seconds and returns a list of dictionaries with `start`, `end`, and `text` fields for each annotation.
 
@@ -12,6 +11,9 @@ outputs : train_segments.jsonl and vocab.json
 `process_eaf_data(eaf_path, wav_path)`: Combines `parse_eaf` and `extract_audio_segments` into a pipeline: given an EAF file and its associated audio, it returns the aligned speech/text data in one step.
 
 `create_vocab(data_dir)`: Builds a character-level vocabulary from the transcriptions in the dataset. It assigns a unique index to each character and adds special tokens like `<unk>` and `<pad>`. Saves the vocabulary as a JSON file in the specified directory.
+
+Processing output: 'train_segments.jsonl' and 'vocab.json'
+
 
 # example use
 
