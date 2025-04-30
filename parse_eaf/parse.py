@@ -61,38 +61,11 @@ def process_eaf_data(eaf_path, wav_path):
     annotations = parse_eaf(eaf_path)
     return extract_audio_segments(wav_path, annotations)
 
-def create_vocab(data_dir):
+def create_vocab(text):
     vocab = {}
-    for ex in dataset:
-        for char in ex["text"]:
-            if char not in vocab:
-                vocab[char] = len(vocab)
+    for char in text: 
+       if char not in vocab:
+           vocab[char] = len(vocab)
     vocab["<unk>"] = len(vocab)
     vocab["<pad>"] = len(vocab)
-    
-    vocab_path = os.path.join(args.model_dir, "vocab.json")
-    with open(vocab_path, "w") as vocab_file:
-        json.dump(vocab, vocab_file)
-    return vocab_path
-
-def parse_args():
-    parser.add_argument("--data_dir", type=str, default="~/dataset", help="Path to input data directory")
-    parser.add_argument("--output_dir", type=str, default="~/output", help="Path to output transcriptions")
-
-
-def main():
-    args = parse_args()
-    os.makedirs(args.output_dir, exist_ok=True)
-
-    dataset = build_dataset(args.data_dir)
-
-    with open(os.path.join(args.output_dir, "train_segments.jsonl"), "w", encoding="utf-8") as f:
-        for ex in dataset:
-            f.write(json.dumps({"text": ex["text"]}, ensure_ascii=False) + "\n")
-
-    vocab = create_vocab(dataset, args.output_dir)
-    with open(os.path.join(args.output_dir, "vocab.json"), "w", encoding="utf-8") as f:
-        json.dump(vocab, f, ensure_ascii=False, indent=2)
-
-if __name__ == "__main__":
-    main()
+    return vocab
