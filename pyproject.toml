@@ -32,4 +32,8 @@ dev = ["bumpver", "pip-tools"]
 Homepage = "https://github.com/mealieff/parse_eaf"
 
 
+[tool.setuptools]
+packages = ["parse_eaf"]
 
+[tool.setuptools.package-data] 
+"*" = ["dataset"]
