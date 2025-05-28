@@ -4,3 +4,16 @@
 #
 #    pip-compile pyproject.toml
 #
+fave
+numpy 
+scipy
+praat-textgrids
+
+# git clone https://github.com/JoFrhwld/FAVE.git
+# FAVE/
+#   ├── FAVE-align/
+#   ├── FAVE-extract/
+
+# fave-align.py
+# dict/
+# model/

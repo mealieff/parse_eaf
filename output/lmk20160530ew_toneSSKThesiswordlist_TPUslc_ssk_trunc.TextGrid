@@ -1,0 +1,346 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0
+xmax = 71.631
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "LMK"
+		xmin = 0
+		xmax = 71.631
+		intervals: size = 83
+			intervals [1]:
+				xmin = 0.0
+				xmax = 1.285
+				text = "pan 'husband'"
+			intervals [2]:
+				xmin = 1.285
+				xmax = 2.194
+				text = "ban 'arm'"
+			intervals [3]:
+				xmin = 2.194
+				xmax = 2.739
+				text = "pik 'given'"
+			intervals [4]:
+				xmin = 2.739
+				xmax = 3.298
+				text = "bik 'stale'"
+			intervals [5]:
+				xmin = 3.298
+				xmax = 3.707
+				text = "pik 'given'"
+			intervals [6]:
+				xmin = 3.707
+				xmax = 4.801
+				text = "bik 'stale'"
+			intervals [7]:
+				xmin = 4.801
+				xmax = 5.632
+				text = "pak 'broad'"
+			intervals [8]:
+				xmin = 5.632
+				xmax = 6.696
+				text = "bak 'bat'"
+			intervals [9]:
+				xmin = 6.696
+				xmax = 8.254
+				text = "pung 'grow'"
+			intervals [10]:
+				xmin = 8.254
+				xmax = 9.241
+				text = "pung 'grow'"
+			intervals [11]:
+				xmin = 9.241
+				xmax = 10.279
+				text = "pung 'hill'"
+			intervals [12]:
+				xmin = 10.279
+				xmax = 11.552
+				text = "peng 'side'"
+			intervals [13]:
+				xmin = 11.552
+				xmax = 13.058
+				text = "beng 'deaf'"
+			intervals [14]:
+				xmin = 13.058
+				xmax = 13.504
+				text = "beng 'deaf'"
+			intervals [15]:
+				xmin = 13.504
+				xmax = 14.855
+				text = "por 'bulging stomach'"
+			intervals [16]:
+				xmin = 14.855
+				xmax = 16.128
+				text = "bor 'basket'"
+			intervals [17]:
+				xmin = 16.128
+				xmax = 17.114
+				text = "pul 'bunch'"
+			intervals [18]:
+				xmin = 17.114
+				xmax = 18.088
+				text = "pul 'bunch'"
+			intervals [19]:
+				xmin = 18.088
+				xmax = 18.802
+				text = "bul 'mud'"
+			intervals [20]:
+				xmin = 18.802
+				xmax = 19.49
+				text = "bul 'mud'"
+			intervals [21]:
+				xmin = 19.49
+				xmax = 19.868
+				text = "dul? 'mud'"
+			intervals [22]:
+				xmin = 19.868
+				xmax = 20.392999999999997
+				text = "pul 'bunch'"
+			intervals [23]:
+				xmin = 20.392999999999997
+				xmax = 20.859999999999996
+				text = "pul 'bunch'"
+			intervals [24]:
+				xmin = 20.859999999999996
+				xmax = 21.203999999999997
+				text = "pul 'bunch'"
+			intervals [25]:
+				xmin = 21.203999999999997
+				xmax = 21.574999999999996
+				text = "bul 'mud'"
+			intervals [26]:
+				xmin = 21.574999999999996
+				xmax = 22.196999999999996
+				text = "pul kat 'one bunch'"
+			intervals [27]:
+				xmin = 22.196999999999996
+				xmax = 22.832999999999995
+				text = "pul kat 'one bunch'"
+			intervals [28]:
+				xmin = 22.832999999999995
+				xmax = 23.514999999999993
+				text = "pul kat  'one bunch'"
+			intervals [29]:
+				xmin = 23.514999999999993
+				xmax = 24.348999999999993
+				text = "pul kat 'one bunch'"
+			intervals [30]:
+				xmin = 24.348999999999993
+				xmax = 24.89699999999999
+				text = "pul 'bunch'"
+			intervals [31]:
+				xmin = 24.89699999999999
+				xmax = 25.40599999999999
+				text = "bul 'mud'"
+			intervals [32]:
+				xmin = 25.40599999999999
+				xmax = 25.944999999999993
+				text = "pik 'given'"
+			intervals [33]:
+				xmin = 25.944999999999993
+				xmax = 26.840999999999994
+				text = "bik 'stale'"
+			intervals [34]:
+				xmin = 26.840999999999994
+				xmax = 27.476999999999993
+				text = "pak 'broad'"
+			intervals [35]:
+				xmin = 27.476999999999993
+				xmax = 28.327999999999992
+				text = "bak 'bat'"
+			intervals [36]:
+				xmin = 28.327999999999992
+				xmax = 28.970999999999993
+				text = "pan 'husband'"
+			intervals [37]:
+				xmin = 28.970999999999993
+				xmax = 29.593999999999994
+				text = "pan 'husband'"
+			intervals [38]:
+				xmin = 29.593999999999994
+				xmax = 30.384999999999994
+				text = "ban 'arm'"
+			intervals [39]:
+				xmin = 30.384999999999994
+				xmax = 30.900999999999996
+				text = "pik 'give'"
+			intervals [40]:
+				xmin = 30.900999999999996
+				xmax = 31.594999999999995
+				text = "bik 'stale'"
+			intervals [41]:
+				xmin = 31.594999999999995
+				xmax = 32.199
+				text = "pak 'broad'"
+			intervals [42]:
+				xmin = 32.199
+				xmax = 32.919999999999995
+				text = "bak 'bat'"
+			intervals [43]:
+				xmin = 32.919999999999995
+				xmax = 33.54299999999999
+				text = "pung 'growing'"
+			intervals [44]:
+				xmin = 33.54299999999999
+				xmax = 34.175999999999995
+				text = "bung 'hill'"
+			intervals [45]:
+				xmin = 34.175999999999995
+				xmax = 34.83899999999999
+				text = "peng 'side'"
+			intervals [46]:
+				xmin = 34.83899999999999
+				xmax = 35.65699999999999
+				text = "beng 'deaf'"
+			intervals [47]:
+				xmin = 35.65699999999999
+				xmax = 36.23399999999999
+				text = "por 'bulging stomach'"
+			intervals [48]:
+				xmin = 36.23399999999999
+				xmax = 36.889999999999986
+				text = "bor 'basket'"
+			intervals [49]:
+				xmin = 36.889999999999986
+				xmax = 37.55299999999998
+				text = "pul 'bunch'"
+			intervals [50]:
+				xmin = 37.55299999999998
+				xmax = 38.15699999999998
+				text = "bul 'mud'"
+			intervals [51]:
+				xmin = 38.15699999999998
+				xmax = 38.701999999999984
+				text = "pul 'bunch'"
+			intervals [52]:
+				xmin = 38.701999999999984
+				xmax = 39.292999999999985
+				text = "bul 'mud'"
+			intervals [53]:
+				xmin = 39.292999999999985
+				xmax = 39.807999999999986
+				text = "pak 'broad'"
+			intervals [54]:
+				xmin = 39.807999999999986
+				xmax = 40.26099999999999
+				text = "ba?"
+			intervals [55]:
+				xmin = 40.26099999999999
+				xmax = 40.66699999999999
+				text = "baa?"
+			intervals [56]:
+				xmin = 40.66699999999999
+				xmax = 41.137999999999984
+				text = "?"
+			intervals [57]:
+				xmin = 41.137999999999984
+				xmax = 41.71599999999999
+				text = "pan 'husband'"
+			intervals [58]:
+				xmin = 41.71599999999999
+				xmax = 42.701999999999984
+				text = "pan ktxhaa 'a good husband'"
+			intervals [59]:
+				xmin = 42.701999999999984
+				xmax = 43.82499999999998
+				text = "ban ksaang 'a good arm'"
+			intervals [60]:
+				xmin = 43.82499999999998
+				xmax = 45.253999999999984
+				text = "bak ktxhaa 'a good bat'"
+			intervals [61]:
+				xmin = 45.253999999999984
+				xmax = 46.783999999999985
+				text = "bung ktxhaa 'a good hill'"
+			intervals [62]:
+				xmin = 46.783999999999985
+				xmax = 47.95299999999998
+				text = "bung klin 'a big hill'"
+			intervals [63]:
+				xmin = 47.95299999999998
+				xmax = 49.73999999999998
+				text = "pul klin 'a big bunch'"
+			intervals [64]:
+				xmin = 49.73999999999998
+				xmax = 51.15199999999998
+				text = "pan klin 'a big husband'"
+			intervals [65]:
+				xmin = 51.15199999999998
+				xmax = 52.29999999999998
+				text = "peng klin 'a big side'"
+			intervals [66]:
+				xmin = 52.29999999999998
+				xmax = 54.262999999999984
+				text = "bung klin paa 'a big hill' "
+			intervals [67]:
+				xmin = 54.262999999999984
+				xmax = 55.49799999999998
+				text = "beng 'deaf'"
+			intervals [68]:
+				xmin = 55.49799999999998
+				xmax = 56.44699999999998
+				text = "peng 'side"
+			intervals [69]:
+				xmin = 56.44699999999998
+				xmax = 57.61699999999998
+				text = "beng 'deaf'"
+			intervals [70]:
+				xmin = 57.61699999999998
+				xmax = 58.432999999999986
+				text = "beng 'deaf'"
+			intervals [71]:
+				xmin = 58.432999999999986
+				xmax = 59.27099999999999
+				text = "beng 'deaf'"
+			intervals [72]:
+				xmin = 59.27099999999999
+				xmax = 59.94999999999999
+				text = "pan 'husband'"
+			intervals [73]:
+				xmin = 59.94999999999999
+				xmax = 60.810999999999986
+				text = "ban 'arm'"
+			intervals [74]:
+				xmin = 60.810999999999986
+				xmax = 61.60499999999998
+				text = "pik 'give' "
+			intervals [75]:
+				xmin = 61.60499999999998
+				xmax = 62.381999999999984
+				text = "bik 'stale'"
+			intervals [76]:
+				xmin = 62.381999999999984
+				xmax = 63.44099999999998
+				text = "tum 'share'"
+			intervals [77]:
+				xmin = 63.44099999999998
+				xmax = 64.53499999999998
+				text = "dum 'beat (drum'"
+			intervals [78]:
+				xmin = 64.53499999999998
+				xmax = 65.73499999999999
+				text = "teng 'quick'"
+			intervals [79]:
+				xmin = 65.73499999999999
+				xmax = 67.18199999999999
+				text = "deng 'throw'"
+			intervals [80]:
+				xmin = 67.18199999999999
+				xmax = 68.1
+				text = "ti 'below'"
+			intervals [81]:
+				xmin = 68.1
+				xmax = 69.618
+				text = "di 'water'"
+			intervals [82]:
+				xmin = 69.618
+				xmax = 70.642
+				text = "txa 'brothers'"
+			intervals [83]:
+				xmin = 70.642
+				xmax = 71.631
+				text = "da 'weaving implement'"
