@@ -8,6 +8,7 @@ fave
 numpy 
 scipy
 praat-textgrids
+tgt
 
 # git clone https://github.com/JoFrhwld/FAVE.git
 # FAVE/

@@ -36,15 +36,13 @@ def write_text_for_fave(text, wav_path, temp_dir):
 def run_fave_align(fave_dir, wav_path, txt_path, output_path):
     align_script = os.path.join(fave_dir, "fave-align.py")
     dict_path = os.path.join(fave_dir, "dict", "cmudict.0.7a.plain")
-    model_path = os.path.join(fave_dir, "model", "english.nnet.chain.tdnn1b_sp")
     cmd = [
         sys.executable, align_script,
         wav_path, txt_path, output_path,
-        '--dict', dict_path,
-        '--model', model_path
+        '--dict', dict_path
     ]
     subprocess.run(cmd, check=True)
-
+    
 def main():
     parser = argparse.ArgumentParser(description="Force align EAF transcription tier using FAVE-align.")
     parser.add_argument('eaf_file', help='Path to ELAN .eaf file')
