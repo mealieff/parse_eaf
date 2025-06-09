@@ -42,14 +42,14 @@ def run_fave_align(fave_dir, wav_path, txt_path, output_path):
         '--dict', dict_path
     ]
     subprocess.run(cmd, check=True)
-    
+
 def main():
     parser = argparse.ArgumentParser(description="Force align EAF transcription tier using FAVE-align.")
     parser.add_argument('eaf_file', help='Path to ELAN .eaf file')
     parser.add_argument('wav_file', help='Path to corresponding .wav file')
     parser.add_argument('output_dir', help='Directory to save the output TextGrid')
     parser.add_argument('--tier', default='transcription', help='Name of the transcription tier (default: transcription)')
-    parser.add_argument('--fave_dir', default='FAVE-align', help='Path to FAVE-align directory')
+    parser.add_argument('--fave_dir', default='FAVE', help='Path to FAVE-align directory')
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)

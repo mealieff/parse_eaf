@@ -17,4 +17,4 @@ tgt
 
 # fave-align.py
 # dict/
-# model/
+# mod
