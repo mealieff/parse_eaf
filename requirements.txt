@@ -18,3 +18,11 @@ tgt
 # fave-align.py
 # dict/
 # model/
+
+#  conda create --name parse_eaf
+#  conda activate parse_eaf
+#  conda install -c conda-forge praat-textgrids
+#  pip install tgt
+#  pip install fave
+#  pip install numpy
+#  pip install scipy    
