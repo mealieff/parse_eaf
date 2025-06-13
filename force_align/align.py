@@ -35,7 +35,7 @@ def write_text_for_fave(text, wav_path, temp_dir):
 
 def run_fave_align(fave_dir, wav_path, txt_path, output_path):
     align_script = os.path.join(fave_dir, "fave-align.py")
-    dict_path = os.path.join(fave_dir, "dict", "cmudict.0.7a.plain")
+    dict_path = os.path.join(fave_dir, "dictionary", "new_dictionary_lmk_sm.txt")
     cmd = [
         sys.executable, align_script,
         wav_path, txt_path, output_path,
