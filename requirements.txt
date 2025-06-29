@@ -26,3 +26,11 @@ tgt
 #  pip install fave
 #  pip install numpy
 #  pip install scipy    
+
+## ALTERNATIVE TO FAVE: Montreal Forced Aligner
+
+#montreal-forced-aligner
+
+# created an entirely different conda env for this guy
+# conda create -n mfa_env python=3.10 -c conda-forge
+# conda activate mfa_env

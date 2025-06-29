@@ -55,7 +55,7 @@ def extract_annotated_segments(wav_path, textgrid_path, out_wav_path, out_textgr
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Extract annotated segments from WAV and TextGrid.")
-    parser.add_argument("wav", help="Input WAV file")
+    parser.add_argument(":", help="Input WAV file")
     parser.add_argument("textgrid", help="Input TextGrid file")
     parser.add_argument("out_wav", help="Output WAV file")
     parser.add_argument("out_textgrid", help="Output TextGrid file")

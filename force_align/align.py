@@ -33,9 +33,8 @@ def write_text_for_fave(text, wav_path, temp_dir):
         f.write(text)
     return txt_path
 
-def run_fave_align(fave_dir, wav_path, txt_path, output_path):
-    align_script = os.path.join(fave_dir, "fave-align.py")
-    dict_path = os.path.join(fave_dir, "dictionary", "new_dictionary_lmk_sm.txt")
+def run_fave_align(fave_dir, wav_path, txt_path, output_path, dict_path):
+    align_script = os.path.join(fave_dir, "fave", "FAAValign.py")
     cmd = [
         sys.executable, align_script,
         wav_path, txt_path, output_path,
@@ -43,13 +42,15 @@ def run_fave_align(fave_dir, wav_path, txt_path, output_path):
     ]
     subprocess.run(cmd, check=True)
 
+
 def main():
     parser = argparse.ArgumentParser(description="Force align EAF transcription tier using FAVE-align.")
-    parser.add_argument('eaf_file', help='Path to ELAN .eaf file')
-    parser.add_argument('wav_file', help='Path to corresponding .wav file')
-    parser.add_argument('output_dir', help='Directory to save the output TextGrid')
+    parser.add_argument('--eaf_file', help='Path to ELAN .eaf file')
+    parser.add_argument('--wav_file', help='Path to corresponding .wav file')
+    parser.add_argument('--output_dir', help='Directory to save the output TextGrid')
     parser.add_argument('--tier', default='transcription', help='Name of the transcription tier (default: transcription)')
     parser.add_argument('--fave_dir', default='FAVE', help='Path to FAVE-align directory')
+    parser.add_argument('--dict_path', default=None, help='Path to the pronunciation dictionary')
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -70,7 +71,7 @@ def main():
 
     # Run FAVE-align
     try:
-        run_fave_align(args.fave_dir, args.wav_file, txt_path, textgrid_path)
+        run_fave_align(args.fave_dir, args.wav_file, txt_path, textgrid_path, args.dict_path)
         print(f"Alignment complete. Output saved to {textgrid_path}")
     except subprocess.CalledProcessError as e:
         print("FAVE-align failed:", e)
@@ -78,3 +79,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# example usage | python3 force_align/align.py --eaf_file data/septu/setpu_negatives.eaf --wav_file data/septu/setpu_negatives.wav --output_dir output/ --fave_dir FAVE --dict_path dictionary/new_dictionary_lmk_sm.txt
