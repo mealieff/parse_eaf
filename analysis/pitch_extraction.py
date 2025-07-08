@@ -52,3 +52,5 @@ if __name__ == "__main__":
     with open(args.output, "w") as f:
         json.dump(results, f, indent=2)
     print(f"Analysis saved to {args.output}")
+
+    ## Update this script so output is written to csv file
